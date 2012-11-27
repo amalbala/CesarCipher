@@ -1,0 +1,25 @@
+Task.txt
+
+Una funcion que realice el cifrado de un texto para un desplazamiento n dado.
+- La cadena es de caracteres
+- solo se cambian de caracteres alfabéticos
+- Un caracter alfabético es una letra mayúscula o minúscula.
+- Un caracter es mayúsculo si esta dentro del rango ['A', 'Z'].
+- Un caracter es minúsculo si está dentro del rango['a','z']
+- Si la cadena es "ABC 34.,D E*" el resultado con un paso de 2 debe ser "CDE 34.,F G*"
+- Si la cadena es "23ABC¿? =DEF$G" con paso 3 el resultado es "23DEF¿? =GHI$J"
+- Se cambian un valor entero de posicion
+- Si tengo: Todo lo que pude hacer fue sentarme y ver como moría. el resultado con paso 1 deber ser wrgr or txh vh suhjxqwded hudq odv plvpdv uhvsxhvwdv txh exvfdprv ho uhvwr gh qrvrwurv. ¿gh góqgh yhqjr? ¿d góqgh yrb? ¿fxáqwr wlhpsr whqjr? wrgr or txh sxgh kdfhu ixh vhqwduph b yhu frpr pruíd.
+
+- Si el caracter resultante es mayor que la última letra se debe empezar por el principio.
+- Dada la candena Z y el valor 3 el resultado ha de ser C;
+- Dad la cadena A y el valor -3 el resultado ha de ser X
+- Dada la cadena a y el valor -2 el resultado ha de ser y
+- Dada la cadena z y el valor 4 el resultado ha de ser d
+
+
+Una funcion que realice el descifrado del texto para un n dado.
+- Decodificar no es más que codificar cambiando el signo.
+- Dado F decodificado con 5 es igual que F codificado con -5.
+- Si A es codificado con 2 es C, C decodificado con 2 es A.
+
