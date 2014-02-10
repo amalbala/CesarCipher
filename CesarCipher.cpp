@@ -42,6 +42,7 @@ char codify(char letter, int step){
 	forceToBeALetter(codifyCharacter(letter, step));
 }
 
+//Repasando cosillas
 
 char* CesarCipher::codify(char * phrase, int step){
 	char* codedphrase = (char*)malloc(sizeof(char) * strlen(phrase));
