@@ -21,6 +21,8 @@ bool CesarCipher::isMinor(char c){
 	return false;
 }
 
+//Real como la vida misma
+
 bool CesarCipher::isAlphabetic(char c){
 	if(isCapital(c) || isMinor(c) ){
 		return true;
@@ -42,6 +44,7 @@ char codify(char letter, int step){
 	forceToBeALetter(codifyCharacter(letter, step));
 }
 
+//Repasando cosillas
 
 char* CesarCipher::codify(char * phrase, int step){
 	char* codedphrase = (char*)malloc(sizeof(char) * strlen(phrase));
