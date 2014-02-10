@@ -65,3 +65,5 @@ char* CesarCipher::codify(char * phrase, int step){
 codedphrase[strlen(phrase)]='\0';
 	return codedphrase;
 }
+
+//Version 2.0
