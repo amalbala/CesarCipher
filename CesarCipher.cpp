@@ -5,17 +5,21 @@
 
 bool CesarCipher::isCapital(char c){
 	if( (c<='Z') && (c>='A') ){
-		setMinChar('A');
 		setMaxChar('Z');
+		setMinChar('A');
+		
 		return true;
 	}
 	return false;
 }
 
+//aded some info
+
 bool CesarCipher::isMinor(char c){
 	if( (c<='z') && (c>='a') ){
-		setMinChar('a');
+		
 		setMaxChar('z');
+		setMinChar('a');
 		return true;
 	}
 	return false;
@@ -61,3 +65,5 @@ char* CesarCipher::codify(char * phrase, int step){
 codedphrase[strlen(phrase)]='\0';
 	return codedphrase;
 }
+
+//Version 2.0
