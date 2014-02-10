@@ -12,6 +12,8 @@ bool CesarCipher::isCapital(char c){
 	return false;
 }
 
+//aded some info
+
 bool CesarCipher::isMinor(char c){
 	if( (c<='z') && (c>='a') ){
 		setMinChar('a');
