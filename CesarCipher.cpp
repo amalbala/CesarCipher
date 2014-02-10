@@ -5,8 +5,9 @@
 
 bool CesarCipher::isCapital(char c){
 	if( (c<='Z') && (c>='A') ){
-		setMinChar('A');
 		setMaxChar('Z');
+		setMinChar('A');
+		
 		return true;
 	}
 	return false;
