@@ -21,6 +21,8 @@ bool CesarCipher::isMinor(char c){
 	return false;
 }
 
+//Real como la vida misma
+
 bool CesarCipher::isAlphabetic(char c){
 	if(isCapital(c) || isMinor(c) ){
 		return true;
