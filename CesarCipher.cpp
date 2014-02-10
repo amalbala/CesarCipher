@@ -2,10 +2,6 @@
 #include "CesarCipher.h"
 #include <string.h>
 
-CesarCipher::CesarCipher(){}
-
-
-
 
 bool CesarCipher::isCapital(char c){
 	if( (c<='Z') && (c>='A') ){
@@ -32,8 +28,7 @@ bool CesarCipher::isAlphabetic(char c){
 	return false;
 }
 
-char CesarCipher::codifyCharacter(char c, int step){
-	//printf("codifyCharacter %c , %d = %c \n",c,step,c+step);
+char CesarCipher::codifyCharacter(char c, int step){	
 	return (c+step);
 }
 
@@ -43,6 +38,10 @@ char CesarCipher::forceToBeALetter(char c){
 	return c;
 }
 
+char codify(char letter, int step){
+	forceToBeALetter(codifyCharacter(letter, step));
+}
+
 
 char* CesarCipher::codify(char * phrase, int step){
 	char* codedphrase = (char*)malloc(sizeof(char) * strlen(phrase));
@@ -50,7 +49,7 @@ char* CesarCipher::codify(char * phrase, int step){
 		codedphrase[i] = phrase[i];
 		if(isAlphabetic(phrase[i])){
 
-			codedphrase[i] = forceToBeALetter(codifyCharacter(phrase[i], step));
+			codedphrase[i] = codify(phrase[i], step);
 
 
 		}
