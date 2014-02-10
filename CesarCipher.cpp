@@ -2,10 +2,6 @@
 #include "CesarCipher.h"
 #include <string.h>
 
-CesarCipher::CesarCipher(){}
-
-
-
 
 bool CesarCipher::isCapital(char c){
 	if( (c<='Z') && (c>='A') ){
