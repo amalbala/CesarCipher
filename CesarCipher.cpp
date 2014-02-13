@@ -25,6 +25,8 @@ bool CesarCipher::isMinor(char c){
 	return false;
 }
 
+//Otro cambio
+//Cambios
 //Real como la vida misma
 
 bool CesarCipher::isAlphabetic(char c){
